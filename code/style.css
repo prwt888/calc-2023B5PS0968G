@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(https://i.imgur.com/teSTF6w.png) no-repeat center center fixed;
+    background: url('https://i.imgur.com/teSTF6w.png') no-repeat center center fixed;
     background-size: 100% 100%;
 }
 
