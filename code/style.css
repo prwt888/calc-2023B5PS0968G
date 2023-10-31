@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/* Adding custom property for rotation */
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.calculator {
+    border: 3px solid transparent; /* Added for border glow effect */
+    padding: 20px;
+    border-radius: 25px;
+    background: transparent;
+    position: relative;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+input {
+    width: 350px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 45px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    border: none;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 100%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 25px;
+    box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+.equalBtn {
+    background-color: #FF6B91;  /* Cherry tree pink */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent; /* Prepare for glowing effect */
+}
+
+.equalBtn:hover {
+    box-shadow: 0 10px 20px rgba(255, 107, 145, 0.6); /* Matching shadow color with button */
+}
+
+/* Glowing circular border */
+.equalBtn::before {
+    content: "";
+    position: absolute;
+    top: -8%; 
+    left: -8%;
+    width: 116%;
+    height: 116%;
+    border-radius: 50%;
+    background: rgba(255, 107, 145, 0.3); /* Glow effect */
+    pointer-events: none;  /* Ensures the button remains clickable */
+    z-index: -1;
+}
+
+.equalBtn:hover::before {
+    opacity: 0.7;
+    background: rgba(255, 107, 145, 0.5); /* Enhanced glow effect on hover */
+}
+
+.operator {
+    color: #6dee0a;
+}
+
+/* Spinning light effect */
+.calculator::before {
+    content: "";
+    width: calc(100% + 6px); /* Extended by the border width */
+    height: calc(100% + 6px); /* Extended by the border width */
+    border-radius: 19px; /* 16px + 3px border width */
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -3px; /* Offset by border width */
+    left: -3px; /* Offset by border width */
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+    100% {
+        --rotate: 360deg;
+    }
+}
