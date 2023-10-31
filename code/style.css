@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@font-face {
+    font-family: 'TypoDigit';
+    src: url('https://prwt888.github.io/calc-2023B5PS0968G/fonts/TypoDigit.ttf');
+}
+
 
 /* Adding custom property for rotation */
 @property --rotate {
@@ -34,6 +39,7 @@ body {
 }
 
 input {
+    font-family: 'TypoDigit', sans-serif;
     width: 350px;
     border: none;
     padding: 24px;
