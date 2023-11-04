@@ -4,6 +4,7 @@ Certainly! Here's an example of what your `README.md` file could look like for y
 ---
 
 # Calculator App🧮
+[🔗**Link To Access**](https://prwt888.github.io/calc-2023B5PS0968G/)
 
 🙋‍♂️Welcome to the repository for my custom-designed Calculator App. This application provides a sleek, user-friendly interface for performing a variety of mathematical calculations. 
 
@@ -30,7 +31,7 @@ To enhance user experience, the following keyboard shortcuts have been integrate
 
 ## Installation
 
-No installation is required. Simply visit the hosted page to use the calculator. For local use, clone the repository and open the `index.html` file in a web browser.
+No installation is required. Simply visit the link mentioned above to the hosted page to use the calculator. For local use, clone the repository and open the `index.html` file in a web browser.
 
 ## Contributing
 
