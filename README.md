@@ -1,8 +1,4 @@
 # calc-2023B5PS0968G
-Certainly! Here's an example of what your `README.md` file could look like for your calculator app:
-
----
-
 # Calculator App🧮
 [🔗**Link To Access**](https://prwt888.github.io/calc-2023B5PS0968G/)
 
