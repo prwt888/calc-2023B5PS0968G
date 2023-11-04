@@ -78,7 +78,7 @@ body {
     margin-top: 20px;
     position: relative;
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
-    transform: scale(0.67);
+    transform: scale(0.75);
 }
 
 input {
