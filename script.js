@@ -26,7 +26,7 @@ arr.forEach(button => {
     })
 })
 document.addEventListener('keydown', function(event) {
-    if (event.key >= 0 && event.key <= 9) { // Numbers
+    if (event.key >= 0 && event.key <= 9) { 
         string += event.key;
     } else if (event.key === 'Backspace' && !event.shiftKey) {
         // Only trigger delete when Shift is not pressed
